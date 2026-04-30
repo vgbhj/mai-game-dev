@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c860f433f97e0d4ebe917b468e35178, type: 3}
+  m_Name: Treads_UpgradeConfig
+  m_EditorClassIdentifier:
+  upgradeName: "Гусеницы"
+  icon: {fileID: 0}
+  visualPrefab: {fileID: 0}
+  modifiers:
+  - biomeType: 0
+    energyMultiplier: 0.4
+  - biomeType: 1
+    energyMultiplier: 1.3
+  - biomeType: 2
+    energyMultiplier: 0.9
+  - biomeType: 3
+    energyMultiplier: 1.2
