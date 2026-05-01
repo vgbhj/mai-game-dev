@@ -10,11 +10,16 @@ public class RobotController : MonoBehaviour
 
     private Rigidbody rb;
     private Vector3 moveInput;
+    private bool disabled;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
+
+        var energy = GetComponent<EnergySystem>();
+        if (energy != null)
+            energy.OnEnergyDepleted += () => disabled = true;
     }
 
     void Update()
@@ -30,7 +35,7 @@ public class RobotController : MonoBehaviour
         if (keyboard.sKey.isPressed || keyboard.downArrowKey.isPressed)  v = -1f;
         if (keyboard.wKey.isPressed || keyboard.upArrowKey.isPressed)    v =  1f;
 
-        moveInput = new Vector3(h, 0, v).normalized;
+        moveInput = disabled ? Vector3.zero : new Vector3(h, 0, v).normalized;
     }
 
     void FixedUpdate()

@@ -22,6 +22,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c5d341cb67b207d4196a2757fd8b9931, type: 2}
   - {fileID: 11400000, guid: b7e44e6a376b6774cb4de59b35641dde, type: 2}
   - {fileID: 11400000, guid: 0f12728b72296fd439abf55e8476a081, type: 2}
-  upgrades: []
+  upgrades:
+  - {fileID: 11400000, guid: c1c2157729daa314db30183addca2bd5, type: 2}
+  - {fileID: 11400000, guid: a09c2cffc34fa9246a951c5704912888, type: 2}
+  - {fileID: 11400000, guid: 0ecad349db6d45745b71847b0aa882f4, type: 2}
+  - {fileID: 11400000, guid: e7af7b44ca94c964fb180e1640c2eae0, type: 2}
+  - {fileID: 11400000, guid: 301c9cfc330fdef4bae0dcdd91e4ae48, type: 2}
   upgradeCount: 10
   startFinishMinDistance: 200
