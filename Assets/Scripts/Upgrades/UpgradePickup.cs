@@ -3,12 +3,25 @@ using UnityEngine;
 public class UpgradePickup : MonoBehaviour
 {
     public UpgradeConfig upgradeConfig;
+    public float pickupRadius = 2f;
 
     private float baseY;
+    private static Transform robot;
+    private static UpgradeInventory inventory;
 
     void Start()
     {
         baseY = transform.position.y;
+
+        if (robot == null)
+        {
+            var ctrl = FindFirstObjectByType<RobotController>();
+            if (ctrl != null)
+            {
+                robot = ctrl.transform;
+                inventory = ctrl.GetComponent<UpgradeInventory>();
+            }
+        }
     }
 
     void Update()
@@ -20,14 +33,11 @@ public class UpgradePickup : MonoBehaviour
             baseY + bob,
             transform.position.z
         );
-    }
 
-    void OnTriggerEnter(Collider other)
-    {
-        var inventory = other.GetComponent<UpgradeInventory>();
-        if (inventory == null) return;
+        if (robot == null || inventory == null) return;
 
-        if (inventory.TryAddUpgrade(upgradeConfig))
+        float dist = Vector3.Distance(transform.position, robot.position);
+        if (dist < pickupRadius && inventory.TryAddUpgrade(upgradeConfig))
         {
             Destroy(gameObject);
         }
