@@ -8,8 +8,11 @@ public class RobotController : MonoBehaviour
     public float moveSpeed = 8f;
     public float rotationSpeed = 120f;
 
+    public float turnSpeed = 180f;
+
     private Rigidbody rb;
     private Vector3 moveInput;
+    private float turnInput;
     private bool disabled;
 
     void Start()
@@ -27,28 +30,30 @@ public class RobotController : MonoBehaviour
         var keyboard = Keyboard.current;
         if (keyboard == null) return;
 
-        float h = 0f;
         float v = 0f;
+        float turn = 0f;
 
-        if (keyboard.aKey.isPressed || keyboard.leftArrowKey.isPressed)  h = -1f;
-        if (keyboard.dKey.isPressed || keyboard.rightArrowKey.isPressed) h =  1f;
-        if (keyboard.sKey.isPressed || keyboard.downArrowKey.isPressed)  v = -1f;
         if (keyboard.wKey.isPressed || keyboard.upArrowKey.isPressed)    v =  1f;
+        if (keyboard.sKey.isPressed || keyboard.downArrowKey.isPressed)  v = -1f;
+        if (keyboard.aKey.isPressed || keyboard.leftArrowKey.isPressed)   turn = -1f;
+        if (keyboard.dKey.isPressed || keyboard.rightArrowKey.isPressed)  turn =  1f;
 
-        moveInput = disabled ? Vector3.zero : new Vector3(h, 0, v).normalized;
+        moveInput = disabled ? Vector3.zero : new Vector3(0, 0, v);
+        turnInput = disabled ? 0f : turn;
     }
 
     void FixedUpdate()
     {
+        if (Mathf.Abs(turnInput) > 0.01f)
+        {
+            float angle = turnInput * turnSpeed * Time.fixedDeltaTime;
+            rb.MoveRotation(rb.rotation * Quaternion.Euler(0, angle, 0));
+        }
+
         if (moveInput.sqrMagnitude > 0.01f)
         {
-            Vector3 move = moveInput * moveSpeed * Time.fixedDeltaTime;
+            Vector3 move = rb.rotation * moveInput.normalized * moveSpeed * Time.fixedDeltaTime;
             rb.MovePosition(rb.position + move);
-
-            Quaternion targetRot = Quaternion.LookRotation(moveInput);
-            rb.rotation = Quaternion.RotateTowards(
-                rb.rotation, targetRot, rotationSpeed * Time.fixedDeltaTime
-            );
         }
     }
 

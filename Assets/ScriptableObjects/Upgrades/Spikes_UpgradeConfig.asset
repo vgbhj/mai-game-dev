@@ -11,10 +11,10 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4c860f433f97e0d4ebe917b468e35178, type: 3}
   m_Name: Spikes_UpgradeConfig
-  m_EditorClassIdentifier:
-  upgradeName: "Шипы"
+  m_EditorClassIdentifier: 
+  upgradeName: "\u0428\u0438\u043F\u044B"
   icon: {fileID: 0}
-  visualPrefab: {fileID: 0}
+  visualPrefab: {fileID: 2777772023805855933, guid: 71467e8343954d5469e67e1647eea3ca, type: 3}
   modifiers:
   - biomeType: 0
     energyMultiplier: 1.2
