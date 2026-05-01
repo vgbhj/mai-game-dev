@@ -35,7 +35,7 @@ public class RobotController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (moveInput.magnitude > 0.1f)
+        if (moveInput.sqrMagnitude > 0.01f)
         {
             Vector3 move = moveInput * moveSpeed * Time.fixedDeltaTime;
             rb.MovePosition(rb.position + move);
@@ -47,5 +47,5 @@ public class RobotController : MonoBehaviour
         }
     }
 
-    public bool IsMoving => moveInput.magnitude > 0.1f;
+    public bool IsMoving => moveInput.sqrMagnitude > 0.01f;
 }
