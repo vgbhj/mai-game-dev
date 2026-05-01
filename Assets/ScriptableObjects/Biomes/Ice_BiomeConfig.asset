@@ -11,11 +11,11 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e89683488f9535746a3613740d15ba6a, type: 3}
   m_Name: Ice_BiomeConfig
-  m_EditorClassIdentifier:
+  m_EditorClassIdentifier: 
   biomeName: Ice
   biomeType: 1
   mapColor: {r: 0.7, g: 0.9, b: 1, a: 1}
-  terrainLayer: {fileID: 0}
+  terrainLayer: {fileID: 8574412962073106934, guid: 2692f763f5d9c474e885a8cbb00d0617, type: 2}
   physicsMaterial: {fileID: 0}
   energyMultiplier: 1.8
   obstaclePrefabs: []

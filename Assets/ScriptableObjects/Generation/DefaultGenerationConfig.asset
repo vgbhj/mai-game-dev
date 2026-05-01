@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf59aa0e754265c4b9814dbfc27068b4, type: 3}
+  m_Name: DefaultGenerationConfig
+  m_EditorClassIdentifier: Assembly-CSharp::GenerationConfig
+  terrainSize: 512
+  terrainHeight: 120
+  noiseScale: 0.004
+  noiseOctaves: 4
+  biomeNoiseScale: 0.01
+  biomes:
+  - {fileID: 11400000, guid: 90befda4e1c08dc448e34901787e36a5, type: 2}
+  - {fileID: 11400000, guid: c5d341cb67b207d4196a2757fd8b9931, type: 2}
+  - {fileID: 11400000, guid: b7e44e6a376b6774cb4de59b35641dde, type: 2}
+  - {fileID: 11400000, guid: 0f12728b72296fd439abf55e8476a081, type: 2}
+  upgrades: []
+  upgradeCount: 10
+  startFinishMinDistance: 200

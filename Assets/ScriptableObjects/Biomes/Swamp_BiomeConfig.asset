@@ -11,11 +11,11 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e89683488f9535746a3613740d15ba6a, type: 3}
   m_Name: Swamp_BiomeConfig
-  m_EditorClassIdentifier:
+  m_EditorClassIdentifier: 
   biomeName: Swamp
   biomeType: 3
   mapColor: {r: 0.2, g: 0.6, b: 0.1, a: 1}
-  terrainLayer: {fileID: 0}
+  terrainLayer: {fileID: 8574412962073106934, guid: 8da39da941ae3704f8bb8dffe488aab2, type: 2}
   physicsMaterial: {fileID: 0}
   energyMultiplier: 2
   obstaclePrefabs: []
