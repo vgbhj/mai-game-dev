@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upgradeName: "\u0410\u043D\u0442\u0438\u0433\u0440\u0430\u0432"
   icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-  visualPrefab: {fileID: 2777772023805855933, guid: 71467e8343954d5469e67e1647eea3ca, type: 3}
+  visualPrefab: {fileID: 2777772023805855933, guid: b8646af04c6f6564a94e4af8b1c2b160, type: 3}
   modifiers:
   - biomeType: 0
     energyMultiplier: 1.1
