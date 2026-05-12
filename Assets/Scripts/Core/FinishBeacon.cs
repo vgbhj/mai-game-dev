@@ -19,10 +19,7 @@ public class FinishBeacon : MonoBehaviour
         pillar.transform.localScale = new Vector3(pillarRadius, pillarHeight / 2f, pillarRadius);
         Destroy(pillar.GetComponent<Collider>());
 
-        pillarMaterial = new Material(Shader.Find("Universal Render Pipeline/Lit"));
-        pillarMaterial.SetColor("_BaseColor", beaconColor * 0.5f);
-        pillarMaterial.SetColor("_EmissionColor", beaconColor * 3f);
-        pillarMaterial.EnableKeyword("_EMISSION");
+        pillarMaterial = CreateEmissiveMaterial(beaconColor * 0.5f, beaconColor * 3f);
         pillar.GetComponent<Renderer>().material = pillarMaterial;
 
         var lightObj = new GameObject("BeaconLight");
@@ -40,10 +37,18 @@ public class FinishBeacon : MonoBehaviour
         ring.transform.localScale = new Vector3(5f, 0.1f, 5f);
         Destroy(ring.GetComponent<Collider>());
 
-        var ringMat = new Material(pillarMaterial);
-        ringMat.SetColor("_BaseColor", beaconColor * 0.3f);
-        ringMat.SetColor("_EmissionColor", beaconColor * 2f);
+        var ringMat = CreateEmissiveMaterial(beaconColor * 0.3f, beaconColor * 2f);
         ring.GetComponent<Renderer>().material = ringMat;
+    }
+
+    Material CreateEmissiveMaterial(Color baseColor, Color emissionColor)
+    {
+        var mat = new Material(Shader.Find("Universal Render Pipeline/Lit"));
+        mat.SetColor("_BaseColor", baseColor);
+        mat.EnableKeyword("_EMISSION");
+        mat.SetColor("_EmissionColor", emissionColor);
+        mat.globalIlluminationFlags = MaterialGlobalIlluminationFlags.RealtimeEmissive;
+        return mat;
     }
 
     void Update()
