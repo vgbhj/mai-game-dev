@@ -155,7 +155,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 67.7, y: 0}
+  m_AnchoredPosition: {x: 53.5, y: 0}
   m_SizeDelta: {x: 64, y: 64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &62960134
@@ -1051,7 +1051,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -30, y: 0}
   m_SizeDelta: {x: 64, y: 64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &455747876
@@ -1471,7 +1471,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 91.503235, y: -50.986877}
+  m_AnchoredPosition: {x: 91.503174, y: -50.986816}
   m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &730405881
@@ -3015,8 +3015,13 @@ MonoBehaviour:
   - {fileID: 1408453314}
   - {fileID: 1551819696}
   - {fileID: 1288447539}
-  filledColor: {r: 0.2, g: 0.8, b: 0.4, a: 1}
+  tooltipPanel: {fileID: 0}
+  tooltipText: {fileID: 0}
   emptyColor: {r: 1, g: 1, b: 1, a: 0.2}
+  benefitColor: {r: 0.2, g: 0.9, b: 0.3, a: 1}
+  penaltyColor: {r: 0.9, g: 0.2, b: 0.2, a: 1}
+  neutralColor: {r: 0.6, g: 0.6, b: 0.6, a: 1}
+  outlineWidth: 3
 --- !u!1 &1799867189
 GameObject:
   m_ObjectHideFlags: 0
