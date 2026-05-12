@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Treads_UpgradeConfig
   m_EditorClassIdentifier: 
   upgradeName: "\u0413\u0443\u0441\u0435\u043D\u0438\u0446\u044B"
-  icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  icon: {fileID: 21300000, guid: b734406cff4e8af4a8c2f1127661d914, type: 3}
   visualPrefab: {fileID: 2777772023805855933, guid: 8d992b7bffa176d4c8a4e15aca40a704, type: 3}
   modifiers:
   - biomeType: 0

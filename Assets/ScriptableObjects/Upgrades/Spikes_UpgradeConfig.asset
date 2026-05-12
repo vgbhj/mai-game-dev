@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Spikes_UpgradeConfig
   m_EditorClassIdentifier: 
   upgradeName: "\u0428\u0438\u043F\u044B"
-  icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  icon: {fileID: 21300000, guid: 091c25570b4bffe46a0fac7ebcd47c6e, type: 3}
   visualPrefab: {fileID: 2777772023805855933, guid: 15240760700fd54428708e3b655e351e, type: 3}
   modifiers:
   - biomeType: 0

@@ -381,7 +381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f05b211be73f647b1e47b33bdf1b2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnergySystem
-  maxEnergy: 100
+  maxEnergy: 150
   baseEnergyDrain: 2
   <CurrentEnergy>k__BackingField: 0
   <DrainRate>k__BackingField: 0

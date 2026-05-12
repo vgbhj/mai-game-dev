@@ -22,6 +22,12 @@ public class UpgradeSlotUI : MonoBehaviour
         }
         inventory.OnInventoryChanged += Refresh;
 
+        for (int i = 0; i < slotIcons.Length; i++)
+            slotIcons[i].raycastTarget = false;
+        for (int i = 0; i < slotLabels.Length; i++)
+            if (slotLabels[i] != null)
+                slotLabels[i].raycastTarget = false;
+
         for (int i = 0; i < removeButtons.Length; i++)
         {
             int index = i;

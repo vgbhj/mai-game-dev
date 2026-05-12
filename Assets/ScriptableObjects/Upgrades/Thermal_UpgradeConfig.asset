@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Thermal_UpgradeConfig
   m_EditorClassIdentifier: 
   upgradeName: "\u0422\u0435\u043F\u043B\u043E\u0438\u0437\u043E\u043B\u044F\u0446\u0438\u044F"
-  icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  icon: {fileID: 21300000, guid: e4b92d7b55a6e5744be409d812d37a22, type: 3}
   visualPrefab: {fileID: 2777772023805855933, guid: b6ad6e22d31f05140ad269ebec2d700c, type: 3}
   modifiers:
   - biomeType: 0

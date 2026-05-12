@@ -1,12 +1,5 @@
 fileFormatVersion: 2
-guid: b1bd0cdf215d92345b71bee9fad29608
-AssetOrigin:
-  serializedVersion: 1
-  productId: 113946
-  packageName: Icon Generator - Generate icons from prefabs
-  packageVersion: 2.1
-  assetPath: Assets/IconGenerator/ExampleOverlay - Circle Border.png
-  uploadId: 304245
+guid: b734406cff4e8af4a8c2f1127661d914
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -70,9 +63,9 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   swizzle: 50462976
-  cookieLightType: 1
+  cookieLightType: 0
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
@@ -86,7 +79,7 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -99,7 +92,7 @@ TextureImporter:
     overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites: []
